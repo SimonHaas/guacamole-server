@@ -3,6 +3,7 @@ name: Pull request CI build
 # Run build for all pull requests
 on:
   pull_request:
+  workflow_dispatch:
 
 # Limit to only one build for a given PR source branch at a time,
 # cancelling any in-progress builds
